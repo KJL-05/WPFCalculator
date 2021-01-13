@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfCalApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="747.511" Width="587.388">
+    <Grid>
+        <Label x:Name="labShowTime" Content="" HorizontalAlignment="Left" Margin="3,10,0,0" VerticalAlignment="Top" Height="47" Width="542" Foreground="#FF367897" OpacityMask="#FFE74545" Background="#FFC38686" FontFamily="MS Gothic" FontSize="24"/>
+        <Label x:Name="labHistory" Content="" HorizontalAlignment="Left" Margin="326,62,0,0" VerticalAlignment="Top" Height="39" Width="219"/>
+        <Border Margin="10,106,9.8,0" Padding="5" Background="LightYellow" BorderBrush="SteelBlue" BorderThickness="3,5,3,5" CornerRadius="10" VerticalAlignment="Top" Height="94">
+            <TextBlock x:Name="TextShowNum" Height="74" Width="665" VerticalAlignment="Top" FontSize="48" Margin="-123,0,2.8,0" HorizontalAlignment="Right" FlowDirection="RightToLeft" IsHitTestVisible="False"/>
+        </Border>
+        <Button x:Name="btn7" HorizontalAlignment="Left" Margin="128,210,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Style="{StaticResource MyWpfButton}" Content="7" Click="btnNum_Click"/>
+        <Button x:Name="btn8" Style="{StaticResource MyWpfButton}" Content="8" HorizontalAlignment="Left" Margin="230,210,0,0" VerticalAlignment="Top" Width="95" Height="98" Cursor="" FontSize="48" Click="btnNum_Click"/>
+        <Button x:Name="btn9" Style="{StaticResource MyWpfButton}" Content="9" HorizontalAlignment="Left" Margin="330,210,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Click="btnNum_Click"/>
+        <Button x:Name="btnDiv" HorizontalAlignment="Left" Margin="430,210,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Style="{StaticResource MyWpfButton}" Content="/" Click="btnOpe_Click"/>
+        <Button x:Name="btn4" HorizontalAlignment="Left" Margin="128,312,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Style="{StaticResource MyWpfButton}" Content="4" Click="btnNum_Click"/>
+        <Button x:Name="btn5" Style="{StaticResource MyWpfButton}" Content="5" HorizontalAlignment="Left" Margin="230,312,0,0" VerticalAlignment="Top" Width="95" Height="98" Cursor="" FontSize="48" Click="btnNum_Click"/>
+        <Button x:Name="btn6" Style="{StaticResource MyWpfButton}" Content="6" HorizontalAlignment="Left" Margin="330,312,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Click="btnNum_Click"/>
+        <Button x:Name="btnMul" HorizontalAlignment="Left" Margin="430,312,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Style="{StaticResource MyWpfButton}" Content="*" Click="btnOpe_Click"/>
+        <Button x:Name="btn1" HorizontalAlignment="Left" Margin="128,413,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Style="{StaticResource MyWpfButton}" Content="1" Click="btnNum_Click"/>
+        <Button x:Name="btn2" Style="{StaticResource MyWpfButton}" Content="2" HorizontalAlignment="Left" Margin="230,413,0,0" VerticalAlignment="Top" Width="95" Height="98" Cursor="" FontSize="48" Click="btnNum_Click"/>
+        <Button x:Name="btn3" Style="{StaticResource MyWpfButton}" Content="3" HorizontalAlignment="Left" Margin="330,413,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Click="btnNum_Click"/>
+        <Button x:Name="btnSub" Style="{StaticResource MyWpfButton}" Content="-" HorizontalAlignment="Left" Margin="430,413,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Click="btnOpe_Click"/>
+        <Button x:Name="btnClear" HorizontalAlignment="Left" Margin="128,515,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Style="{StaticResource MyWpfButton}" Content="C" Click="btnC_Click"/>
+        <Button x:Name="btn0" Style="{StaticResource MyWpfButton}" Content="0" HorizontalAlignment="Left" Margin="230,515,0,0" VerticalAlignment="Top" Width="95" Height="98" Cursor="" FontSize="48" Click="btnNum_Click"/>
+        <Button x:Name="btnEqual" Style="{StaticResource MyWpfButton}" Content="=" HorizontalAlignment="Left" Margin="330,515,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Click="btnEqual_Click"/>
+        <Button x:Name="btnSum" Style="{StaticResource MyWpfButton}" Content="+" HorizontalAlignment="Left" Margin="430,515,0,0" VerticalAlignment="Top" Width="95" Height="98" FontSize="48" Click="btnOpe_Click"/>
+        <Button x:Name="btnTakeOpp" FontSize="36" Style="{StaticResource MyWpfButton}" Content="+⁄-" HorizontalAlignment="Left" Margin="31,210,0,0" VerticalAlignment="Top" Width="92" Height="98" Click="btnTakeOpp_Click"/>
+        <Label x:Name="labTip"  HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Height="39" Width="234" Content="暂时无法实现连续计算，+⁄-为取相反数"/>
+        <Button x:Name="btnSquare" FontSize="24" Style="{StaticResource MyWpfButton}" Content="x^2" HorizontalAlignment="Left" Margin="31,313,0,0" VerticalAlignment="Top" Width="92" Height="98" Click="btnSquare_Click"/>
+        <Button x:Name="btnBinary" FontSize="20" Style="{StaticResource MyWpfButton}" Content="转二进制" HorizontalAlignment="Left" Margin="31,515,0,0" VerticalAlignment="Top" Width="92" Height="98" Click="btnBinary_Click"/>
+        <Button x:Name="btnPowerY" FontSize="24" Style="{StaticResource MyWpfButton}" Content="x^y" HorizontalAlignment="Left" Margin="31,411,0,0" VerticalAlignment="Top" Width="92" Height="98" Click="btnOpe_Click"/>
+    </Grid>
+</Window>

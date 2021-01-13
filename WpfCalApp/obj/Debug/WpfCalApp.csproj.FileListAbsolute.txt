@@ -1,0 +1,17 @@
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\bin\Debug\WpfCalApp.exe.config
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\bin\Debug\WpfCalApp.exe
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\bin\Debug\WpfCalApp.pdb
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\WpfCalApp.csprojResolveAssemblyReference.cache
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\MainWindow.baml
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\App.baml
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\MainWindow.g.cs
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\App.g.cs
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\WpfCalApp_MarkupCompile.cache
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\WpfCalApp.g.resources
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\WpfCalApp.Properties.Resources.resources
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\WpfCalApp.csproj.GenerateResource.Cache
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\WpfCalApp.exe
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WpfCalApp\WpfCalApp\obj\Debug\WpfCalApp.pdb
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WPFCalculator\WpfCalApp\bin\Debug\WpfCalApp.exe.config
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WPFCalculator\WpfCalApp\obj\Debug\WpfCalApp.exe
+G:\游戏\ProcessExercise\C#Study\EffectPicture\WPFCalculator\WpfCalApp\obj\Debug\WpfCalApp.pdb

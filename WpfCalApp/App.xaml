@@ -1,0 +1,50 @@
+﻿<Application x:Class="WpfCalApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--点击按钮背景顔色-->
+        <LinearGradientBrush x:Key="LinearGradientBlueBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF2F70BD" Offset="0" />
+            <GradientStop Color="#FF5278B8" Offset="1" />
+        </LinearGradientBrush>
+        <!--按钮外边框顔色-->
+        <SolidColorBrush x:Key="MyBtnBorderColor" Color="#FF2D78F4"></SolidColorBrush>
+        <SolidColorBrush x:Key="MyBtnHoverBackgroundColor" Color="#FF317EF3"></SolidColorBrush>
+        <!--END-->
+
+        <Style x:Key="MyWpfButton" TargetType="{x:Type Button}" >
+            <!--设置按钮颜色-->
+            <Setter Property="Background" Value="{StaticResource LinearGradientBlueBackground}"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="BorderBrush" Value="{StaticResource MyBtnBorderColor}"></Setter>
+            <!--设置按钮圆角-->
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}" 
+                                SnapsToDevicePixels="true" CornerRadius="5,5,5,5">
+                            <!--设置圆角尺寸-->
+                            <ContentPresenter x:Name="contentPresenter"
+                                              Focusable="False"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              Margin="{TemplateBinding Padding}"
+                                              RecognizesAccessKey="True"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <!--设置触发事件，鼠标悬在按钮上方时按钮变成淡蓝色-->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource MyBtnHoverBackgroundColor}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>
