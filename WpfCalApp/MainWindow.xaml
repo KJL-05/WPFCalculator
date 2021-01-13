@@ -28,6 +28,6 @@
         <Label x:Name="labTip"  HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Height="39" Width="234" Content="暂时无法实现连续计算，+⁄-为取相反数"/>
         <Button x:Name="btnSquare" FontSize="24" Style="{StaticResource MyWpfButton}" Content="x^2" HorizontalAlignment="Left" Margin="31,313,0,0" VerticalAlignment="Top" Width="92" Height="98" Click="btnSquare_Click"/>
         <Button x:Name="btnBinary" FontSize="20" Style="{StaticResource MyWpfButton}" Content="转二进制" HorizontalAlignment="Left" Margin="31,515,0,0" VerticalAlignment="Top" Width="92" Height="98" Click="btnBinary_Click"/>
-        <Button x:Name="btnPowerY" FontSize="24" Style="{StaticResource MyWpfButton}" Content="x^y" HorizontalAlignment="Left" Margin="31,411,0,0" VerticalAlignment="Top" Width="92" Height="98" Click="btnOpe_Click"/>
+        <Button x:Name="btnPowerY" FontSize="24" Style="{StaticResource MyWpfButton}" Content="x^y" HorizontalAlignment="Left" Margin="31,413,0,0" VerticalAlignment="Top" Width="92" Height="98" Click="btnOpe_Click"/>
     </Grid>
 </Window>
