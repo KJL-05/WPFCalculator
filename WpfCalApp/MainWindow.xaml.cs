@@ -22,17 +22,17 @@ namespace WpfCalApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        string ope = null;
-        double opeNum1 = 0.0;
-        double opeNum2 = 0.0;
-        string opeStrF = null;
-        string opeStrS = null;
-        bool btnE_Clicked = false;
+        string ope = null;          //操作符
+        double opeNum1 = 0.0;       //第一个操作数
+        double opeNum2 = 0.0;       //第二个操作数
+        string opeStrF = null;      //暂存第一个操作数（以字符串形式）
+        string opeStrS = null;      //暂存第二个操作数（以字符串形式）
+        bool btnE_Clicked = false;  //等于号是否被点击过；
 
         public MainWindow()
         {
             InitializeComponent();
-            DispatcherTimer timer = new DispatcherTimer();
+            DispatcherTimer timer = new DispatcherTimer();  //构建一个时钟，用以时间的显示
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Start();
             timer.Tick += timer_Tick;
@@ -46,7 +46,7 @@ namespace WpfCalApp
 
         private void OpeInput(string str)//操作符输入
         {
-            if (ope!=null)
+            if (ope!=null)              //在同一计算中输入了两个操作符（不允许，一个算式只支持一个操作符）
             {
                 Form form = new Form();
                 form.Text = "操作符输入错误，计算器重启！";
@@ -56,7 +56,7 @@ namespace WpfCalApp
                 TextShowNum.Text = "";
                 labHistory.Content = "";
             }
-            if (TextShowNum.Text == "")
+            if (TextShowNum.Text == "")     //未输入操作数
             {
                 return;
             }
@@ -69,15 +69,15 @@ namespace WpfCalApp
         private void Equal()//等于号输入
         {
             opeStrS = TextShowNum.Text;
-            if (opeStrF != null && opeStrS != null && ope != null)
+            if (opeStrF != null && opeStrS != null && ope != null)//两个操作数及运算符都输入正确
             {
                 try
-                {
+                {                                                 //将以字符串类型保存的操作数取出
                     opeNum1 = double.Parse(opeStrF);
                     opeNum2 = double.Parse(opeStrS);
 
                 }
-                catch
+                catch                                               //类型转化失败
                 {
                     Form form = new Form();
                     form.Text = "数字输入错误，计算器重启！";
@@ -89,7 +89,7 @@ namespace WpfCalApp
 
                 }
 
-                switch (ope)
+                switch (ope)                                           //判断进行何种运算
                 {
                     case "+":
                         TextShowNum.Text = (opeNum1 + opeNum2).ToString();
@@ -138,22 +138,15 @@ namespace WpfCalApp
                 TextShowNum.Text = "";
                 labHistory.Content = "";
             }
-            if (ope != "")
-            {
-                string strNum = TextShowNum.Text.ToString();
-                string strHistory = labHistory.Content.ToString();
 
-                strNum += str;
-                strHistory += str;
+            string strNum = TextShowNum.Text.ToString();
+            string strHistory = labHistory.Content.ToString();
 
-                TextShowNum.Text = strNum;
-                labHistory.Content = strHistory;
+            strNum += str;
+            strHistory += str;
 
-            }
-            else
-            {
-                return;
-            }
+            TextShowNum.Text = strNum;
+            labHistory.Content = strHistory;
             btnE_Clicked = false;
         }
 
@@ -184,7 +177,7 @@ namespace WpfCalApp
             labHistory.Content = "";
         }
 
-        private void btnTakeOpp_Click(object sender, RoutedEventArgs e)
+        private void btnTakeOpp_Click(object sender, RoutedEventArgs e)//取相反数点击事件
         {
             try
             {
